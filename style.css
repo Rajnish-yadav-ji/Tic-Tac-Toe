@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100wh;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.ticTac{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 5px;  
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    color: #212121;
+    border-radius: 5px;
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #aaeee1;
+}
+
+#restartBtn{
+    margin-top: 30px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: rgba(136, 136, 231, 0.796);
+    font-size: 22px;
+    outline: none;
+    border: 1px solid white;
+}
+
+h2{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: rgb(170, 232, 62);
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.winnerClass {
+    background-color: lightgreen;
+    font-size: 45px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+
+
+@media screen and (max-width:400px) {
+    
+    .box{
+        height: 70px;
+        width: 70px;
+        background-color:white;
+        color: #212121;
+        border-radius: 5px;
+        font-size: 40px;
+       
+    }
+    
+.winnerClass {
+    background-color: lightgreen;
+   
+}
+}
